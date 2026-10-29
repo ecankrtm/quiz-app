@@ -1,10 +1,10 @@
-import React from 'react'
-import Quiz from './Companend/Quiz/Quiz'
+import QuizApp from './quiz/QuizApp'
+import { LanguageProvider } from './i18n/LanguageProvider'
 
-function App() {
+export default function App() {
   return (
-      <Quiz/>
+    <LanguageProvider>
+      <QuizApp />
+    </LanguageProvider>
   )
 }
-
-export default App
